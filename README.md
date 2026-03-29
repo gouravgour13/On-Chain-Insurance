@@ -41,15 +41,15 @@ The long-term vision is to bring parametric, peer-to-peer, and community-pooled 
 
 ## Key Features
 
-| Feature | Description |
-|---|---|
-| **Policy Registration** | Users can create insurance policies with a defined coverage amount, premium, and duration. Each policy receives a unique on-chain ID. |
-| **Automatic Expiry Enforcement** | Policy validity is enforced using ledger timestamps. Attempting to file a claim against an expired policy is automatically rejected. |
-| **Claim Filing** | Policyholders can file claims against active policies. The contract validates that the claim amount does not exceed the coverage limit. |
-| **Admin-Controlled Settlement** | A designated admin can settle verified claims, updating both the claim record and the associated policy status atomically. |
-| **Global Pool Transparency** | A `PoolStatus` struct tracks total policies, active policies, total claims, and settled claims — queryable by anyone at any time. |
-| **Duplicate Claim Prevention** | Once a policy has been claimed and settled, it cannot be claimed again, preventing double-spend or fraudulent re-claims. |
-| **Immutable Audit Trail** | Every policy and claim is stored on-chain with timestamps, providing a permanent, tamper-proof record. |
+| Feature                          | Description                                                                                                                             |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Policy Registration**          | Users can create insurance policies with a defined coverage amount, premium, and duration. Each policy receives a unique on-chain ID.   |
+| **Automatic Expiry Enforcement** | Policy validity is enforced using ledger timestamps. Attempting to file a claim against an expired policy is automatically rejected.    |
+| **Claim Filing**                 | Policyholders can file claims against active policies. The contract validates that the claim amount does not exceed the coverage limit. |
+| **Admin-Controlled Settlement**  | A designated admin can settle verified claims, updating both the claim record and the associated policy status atomically.              |
+| **Global Pool Transparency**     | A `PoolStatus` struct tracks total policies, active policies, total claims, and settled claims — queryable by anyone at any time.       |
+| **Duplicate Claim Prevention**   | Once a policy has been claimed and settled, it cannot be claimed again, preventing double-spend or fraudulent re-claims.                |
+| **Immutable Audit Trail**        | Every policy and claim is stored on-chain with timestamps, providing a permanent, tamper-proof record.                                  |
 
 ---
 
@@ -68,3 +68,27 @@ The current implementation is a minimal viable foundation. The following enhance
 
 ##Contract ID: CCVSLJ6NOHV35GY7BYLTZOXQCIXPPTUVDWABABJSHPFYI2JZZE55FLD4
 <img width="1784" height="862" alt="Screenshot 2026-03-28 190025" src="https://github.com/user-attachments/assets/668d5262-7290-477d-87c1-14437fd2d4a7" />
+
+---
+
+## Frontend
+
+A React + Vite frontend has been added in `frontend/`.
+
+### Run frontend locally
+
+```bash
+cd frontend
+copy .env.example .env
+npm install
+npm run dev
+```
+
+### Build frontend
+
+```bash
+cd frontend
+npm run build
+```
+
+The frontend is configured for Soroban testnet and uses Freighter wallet to sign transactions.

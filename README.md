@@ -57,7 +57,7 @@ The long-term vision is to bring parametric, peer-to-peer, and community-pooled 
 
 🎥 **Watch the full product demonstration:**
 
-[Click here to watch the video](https://github.com/username/repo/blob/main/product_walkthrough/On-Chain_inurance.mp4)
+[Click here to watch the video](https://github.com/gouravgour13/On-Chain-Insurance/blob/main/product_walkthrough/On-Chain_inurance.mp4)
 
 _This video demonstrates the complete workflow: policy creation, claim filing, and settlement using the Soroban smart contract on Stellar testnet._
 

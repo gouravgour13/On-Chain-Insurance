@@ -53,6 +53,19 @@ The long-term vision is to bring parametric, peer-to-peer, and community-pooled 
 
 ---
 
+## Product Walkthrough
+
+🎥 **Watch the full product demonstration:**
+
+<video width="100%" controls>
+  <source src="product_walkthrough/On-Chain_inurance.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+_This video demonstrates the complete workflow: policy creation, claim filing, and settlement using the Soroban smart contract on Stellar testnet._
+
+---
+
 ## Future Scope
 
 The current implementation is a minimal viable foundation. The following enhancements are planned for future iterations:
